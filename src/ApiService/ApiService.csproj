@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Infrastructure.Data\Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\SharedKernel.AspNetCore\SharedKernel.AspNetCore.csproj" />
+    <ProjectReference Include="..\SharedKernel.DependencyInjection\SharedKernel.DependencyInjection.csproj" />
+    <ProjectReference Include="..\SharedKernel.Serilog\SharedKernel.Serilog.csproj" />
+    <ProjectReference Include="..\SharedKernel.Swagger\SharedKernel.Swagger.csproj" />
+  </ItemGroup>
+
+</Project>
